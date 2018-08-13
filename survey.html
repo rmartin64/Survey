@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<title>Ice Cream Survey</title
+<link rel="stylesheet" href="survey.css">
+</head>
+<html>
+  <body>
+    <header>
+      <h1 id="title">Ice Cream Questionnaire</h1>  
+    </header>
+    <main>
+       <p id="description">
+      Help us learn more about ice cream tastes
+    </p>
+  <form id="survey-form">
+    <label for="name" id="name-label"> * Name:</label>
+    <input id="name" type="text" placeholder="Full Name" required></input>
+    
+    <label for="email" id="email-label"> * Email:</label>
+    <input id="email" type="email" placeholder="your@email.com" required></input>
+  
+    <label for="number" id="number-label"> * Age:</label>
+    <input id="number" type="number" min="0" max="150" placeholder="Age" required></input>
+ 
+<label for="dropdown" id="dropdown-label">* How often do you eat ice cream?</label>
+    <select id="dropdown" required>
+      <option value="" disabled selected hidden>Choose an option</option>
+      <option value="never">Never</option>
+      <option value="rarely">A few times a month</option>
+      <option value="sometimes">About once a week</option>
+      <option value="often">A few times a week</option>
+      <option value="very-often">Several times a week</option>
+      <option value="every-day">Every day</option>
+      <option value="other">Other</option>
+</select>
+
+<fieldset id="like">
+  <legend>How much do you like ice cream?</legend>
+  <input id="not" type="radio" name="like" value="not">
+  <label for="not">Not at all</label><br>
+  <input id="little" type= "radio" name="like" value="little">
+  <label for="little">A little</label><br>
+  <input id="moderately" type= "radio" name="like" value="moderate">
+  <label for="moderately">Moderately</label><br>
+  <input id="lots" type="radio" name="like" value="lots">
+  <label for="lots">A lot</label><br>
+</fieldset>
+<fieldset id="flavor">
+  <legend>Choose the flavors you like (check all that apply)</legend>
+  <div>
+  <input id="vanilla" type="checkbox" name="flavor" value="vanilla"></input>
+<label for="vanilla">Vanilla</label>
+  </div>
+  <div>
+<input id="chocolate" type="checkbox" name="flavor" value="chocolate"></input>
+<label for="chocolate">Chocolate</label>
+  </div>
+<div>
+<input id="strawberry" type="checkbox" name="flavor" value="strawberry"></input>
+<label for="strawberry">Strawberry</label>
+</div>
+<div>
+<input id="mint" type="checkbox" name="flavor" value="mint"></input>
+<label for="mint">Mint</label>
+</div>
+<div>
+<input id="cookie" type="checkbox" name="flavor" value="cookie"></input>
+<label for="cookie">Cookies and Cream</label>
+</div>
+<div>
+<input id="rockyroad" type="checkbox" name="flavor" value="rockyroad"></input>
+<label for="rockyroad">Rocky Road</label>
+</div>
+<div>
+<input id="butter" type="checkbox" name="flavor" value="butter"></input>
+<label for="butter">Butter Pecan</label>
+</div>
+<div>
+<input id="other" type="checkbox" name="flavor" value="other"></input>
+<label for="other">Other</label><br>
+</div>
+</fieldset>
+<label id="comments-label" for="comments">Let us know your additional comments or suggestions:</label>
+<textarea id="comments" placeholder="Enter comments...">
+</textarea>
+<button id="submit" type="submit" action="/submit">Submit</button>
+    </form>
+</main>
+  </body>
+</html>
